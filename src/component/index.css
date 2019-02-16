@@ -111,10 +111,11 @@
   .button i {
     padding-left: 1em;
     -webkit-transition: all 0.5s linear;
-    transition: all 0.5s linear;
+    transition: all 0.5s linear; 
   }
   
-  .button:hover i {
+  /* make the arrow, the cart moving to the right when hover */
+  .button:hover i { 
     -webkit-transform: translateX(5px);
     -ms-transform: translateX(5px);
     transform: translateX(5px);
@@ -168,31 +169,33 @@
     -webkit-animation: fadeInDown 1s both;
     animation: fadeInDown 1s both;
   }
+
    @-webkit-keyframes fadeInDown {
-  0% {
-  opacity:0;
-  -webkit-transform:translateY(-20px);
-  transform:translateY(-20px);
-  }
-  100% {
-  opacity:1;
-  -webkit-transform:translateY(0);
-  transform:translateY(0);
-  }
-  }
-  @keyframes fadeInDown {
-  0% {
-  opacity:0;
-  -webkit-transform:translateY(-20px);
-  -ms-transform:translateY(-20px);
-  transform:translateY(-20px);
-  }
-  100% {
-  opacity:1;
-  -webkit-transform:translateY(0);
-  -ms-transform:translateY(0);
-  transform:translateY(0);
-  }
+      0% {
+        opacity: 0;
+        -webkit-transform: translateY(-20px);
+        transform: translateY(-20px);
+      }
+      100% {
+        opacity:1;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+      transform: translateY(-20px);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0);
+      -ms-transform: translateY(0);
+      transform: translateY(0);
+    }
   }
   
   
