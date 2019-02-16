@@ -12,14 +12,19 @@ const Item = (props) => {
     return (
         <div className="col-sm-4"> 
             <img src={props.feature} data-at2x={props.feature} alt="features"/> 
-            <h4>Lorem Lpsum</h4>
+            <h4>{props.header}</h4>
             <hr/>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            <p>{props.text}</p>
         </div>
     );
 }
 
 const Feature = () => {
+    const information = [
+        'Lorem Lpsum',
+        'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.'
+    ];
+
     return (
 
         <section className="features section-spacing text-center" id="Features">
@@ -30,15 +35,15 @@ const Feature = () => {
                 </header>
 
                 <div className="row">
-                    <Item feature={feature1}/>
-                    <Item feature={feature2}/>
-                    <Item feature={feature3}/>
+                    <Item feature={feature1} header={information[0]} text={information[1]}/>
+                    <Item feature={feature2} header={information[0]} text={information[1]}/>
+                    <Item feature={feature3} header={information[0]} text={information[1]}/>
                 </div>
 
                 <div className="row">
-                    <Item feature={feature4}/>
-                    <Item feature={feature5}/>
-                    <Item feature={feature6}/>
+                    <Item feature={feature4} header={information[0]} text={information[1]}/>
+                    <Item feature={feature5} header={information[0]} text={information[1]}/>
+                    <Item feature={feature6} header={information[0]} text={information[1]}/>
                 </div>
             </div>
         </section>
