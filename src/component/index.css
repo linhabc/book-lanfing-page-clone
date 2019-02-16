@@ -145,7 +145,7 @@
      nav
      ========================================================================== */
      
-  .navbar { display: none; }
+  /* .navbar { display: none; } */
   
   .navbar-default .navbar-nav > li > a.button {
     text-transform: capitalize;
@@ -155,7 +155,7 @@
   }
   
   .navbar-default .navbar-nav > li > a.button:hover,
-  .navbar-default .navbar-nav > li > a.button:focus { color: #3498db; }
+  .navbar-default .navbar-nav > li > a.button:focus { color: #3498db; background-color: #fff;}
   
   .stick {
     display: block;
@@ -280,44 +280,29 @@
     cursor: pointer;
   }
   
-  .slick-dots li button:before {
-    color: #3498db;
-    opacity: .6;
-  }
-  
-  .slick-dots li.slick-active button:before { opacity: 1; }
-  
-  blockquote {
-    font-size: 18px;
+  .quote {
+    font-size: 24px;
     border-left: none;
     margin: 0;
     padding: 24px;
     position: relative;
   }
   
-  blockquote P { color: #555; }
-  
-  .slick-slide span {
-    font-weight: 700;
-    text-transform: uppercase;
-    margin-left: 1em;
-  }
-  
-  blockquote .fa-quote-left,
-  blockquote .fa-quote-right {
+  .quote .fa-quote-left,
+  .quote .fa-quote-right {
     position: absolute;
-    color: #E4E4E4;
+    color: hsl(0, 0%, 89%);
     font-size: 1em;
   }
   
-  blockquote .fa-quote-left {
+  .quote .fa-quote-left {
     left: 2px;
     top: 0;
   }
   
-  blockquote .fa-quote-right {
+  .quote .fa-quote-right {
     right: 2px;
-    bottom: 0;
+    bottom: 0px;
   }
   
   .reviews img { margin-bottom: .75em; }
@@ -328,6 +313,12 @@
     margin-bottom: 0;
     font-style: italic;
   }
+
+  .img-circle {
+    margin: 0 auto;
+    border-radius: 50%;
+  }
+
   
   /* ==========================================================================
      Subscription form 
