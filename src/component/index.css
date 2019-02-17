@@ -360,7 +360,9 @@
   #mc-form i[class*="last-name-i"],
   #mc-form i[class*="fa-envelope"] { top: 19px; }
   
-  .form-control {
+  input#mailchimp-fname,
+  input#mailchimp-lname,
+  input#mailchimp-email {
     background-color: #fff;
     border: 1px solid #e3e3e3;
     box-shadow: none;
@@ -375,7 +377,7 @@
     box-shadow: none;
   }
   
-  .btn-default {
+  button.btn.btn-default {
     color: #fff;
     background-color: #3498db;
     border-color: #3498db;
@@ -387,18 +389,18 @@
     border-radius: 64px;
   }
   
-  .btn-default:hover,
-  .btn-default:focus,
-  .btn-default:active {
+  button.btn.btn-default:hover,
+  button.btn.btn-default:focus,
+  button.btn.btn-default:active {
     color: #fff;
     background-color: #2980b9;
     border-color: #2980b9;
   }
   
-  .btn:active:focus,
-  .btn-default:focus,
-  .btn:focus,
-  .btn-default:active { outline: none; }
+  button.btn:active:focus,
+  button.btn-default:focus,
+  button.btn:focus,
+  button.btn.btn-default:active { outline: none; }
   
   .sub-form .btn { width: 100%; }
   
@@ -431,7 +433,7 @@
   .sub-form-error i,
   .success-cf i,
   .error-cf i { padding-right: .5em; }
-  
+
   /* ==========================================================================
      Pricing
      ========================================================================== */

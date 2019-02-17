@@ -7,6 +7,7 @@ import Feature from './component/Feature';
 import Counter from './component/Counter';
 import VideoReview from './component/VideoReview';
 import Review from './component/Review';
+import SubForm from './component/SubForm';
 
 class App extends Component {
   render() {
@@ -18,6 +19,7 @@ class App extends Component {
         <Counter />
         <VideoReview />
         <Review />
+        <SubForm />
       </div>
     );
   }
