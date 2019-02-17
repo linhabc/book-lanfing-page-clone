@@ -4,6 +4,17 @@ import CountUp from 'react-countup';
 
 import './index.css';
 
+const CounterItem = (props) => {
+    return(
+        <div className="col-sm-3 col-xs-6"> <i className={props.classTitle} ></i>
+            <h3 className="total-number">
+                <CountUp start={0} separator="," end={props.total} duration={3}/>
+            </h3>
+            <p>{props.title}</p>
+        </div>
+    );
+};
+
 class Counter extends Component {
     constructor(props){
         super(props);
@@ -31,7 +42,6 @@ class Counter extends Component {
                 subcriber: 15000
             });
         }
-        // console.log(window.scrollY);
     }
 
     render(){
@@ -39,37 +49,15 @@ class Counter extends Component {
             <div className="counter text-center"> 
                 <div className="container">
                     <div className="row">
-                        <div className="col-sm-3 col-xs-6"> <i className="fa fa-file-alt fa-3x" ></i>
-                            <h3 className="total-number-1">
-                            <CountUp start={0} separator="," end={this.state.totalPage} duration={3}/>
-                            </h3>
-                            <p>Total Pages</p>
-                        </div>
-                        <div className="col-sm-3 col-xs-6"> <i className="fa fa-graduation-cap fa-3x"></i>
-                            <h3 className="total-number-2">
-                            <CountUp start={0} separator="," end={this.state.activeReader} duration={3}/>
-                            </h3>
-                            <p>Active Readers</p>
-                        </div>
-                        <div className="col-sm-3 col-xs-6"> <i className="fab fa-facebook-f fa-3x"></i>
-                            <h3 className="total-number-3">
-                            <CountUp start={0} separator="," end={this.state.facebookFan} duration={3}/>
-                            </h3>
-                            <p>Facebook Fans</p>
-                        </div>
-                        <div className="col-sm-3 col-xs-6"> <i className="fa fa-users fa-3x"></i>
-                            <h3 className="total-number-4">
-                            <CountUp start={0} separator="," end={this.state.subcriber} duration={3}/>
-                            </h3>
-                            <p>Subscribers</p>
-                        </div>
+                        <CounterItem classTitle='fa fa-file-alt fa-3x' total={this.state.totalPage} title='Total Pages'/>
+                        <CounterItem classTitle='fa fa-graduation-cap fa-3x' total={this.state.activeReader} title='Active Readers'/>
+                        <CounterItem classTitle='fab fa-facebook-f fa-3x' total={this.state.facebookFan} title='Facebook Fans'/>
+                        <CounterItem classTitle='fa fa-users fa-3x' total={this.state.subcriber} title='Subscribers'/>
                     </div>
                 </div>
             </div>
         );
     }
-
-
 }
 
 export default Counter;
