@@ -145,20 +145,43 @@
      nav
      ========================================================================== */
      
-  /* .navbar { display: none; } */
+  .navbar.navbar-expand-lg { display: none; }
   
-  .navbar-default .navbar-nav > li > a.button {
+  .navbar.navbar-expand-lg .container{
+    height: 90%;
+  }
+
+  .navbar-nav a.nav-link {
+    color: #777;
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0 10px;
+  }
+  
+  /* buy button */
+  li > a.button {
     text-transform: capitalize;
     color: #fff;
     padding: .75em 2em;
     transition: all .5s linear;
   }
-  
-  .navbar-default .navbar-nav > li > a.button:hover,
-  .navbar-default .navbar-nav > li > a.button:focus { color: #3498db; background-color: #fff;}
-  
-  .stick {
-    display: block;
+
+  .navbar-nav a.nav-link:hover, .navbar-nav a.nav-link:focus {
+    color: #3498db;
+    background-color: transparent;
+  } 
+
+  .navbar-expand-lg .navbar-nav > li > a.button:hover,
+  .navbar-expand-lg .navbar-nav > li > a.button:focus { color: #3498db; background-color: #fff;} 
+  /* buy button end*/
+
+  .navbar {
+    height: 88px;
+  }
+
+  .navbar.navbar-expand-lg.stick {
+    display: block !important;
     position: fixed;
     width: 100%;
     background: rgba(255, 255, 255, 0.97);
@@ -177,7 +200,7 @@
         transform: translateY(-20px);
       }
       100% {
-        opacity:1;
+        opacity: 0.99;
         -webkit-transform: translateY(0);
         transform: translateY(0);
       }
@@ -191,7 +214,7 @@
       transform: translateY(-20px);
     }
     100% {
-      opacity: 1;
+      opacity: 0.99;
       -webkit-transform: translateY(0);
       -ms-transform: translateY(0);
       transform: translateY(0);
@@ -358,7 +381,7 @@
   
   #mc-form i[class*="first-name-i"],
   #mc-form i[class*="last-name-i"],
-  #mc-form i[class*="fa-envelope"] { top: 19px; }
+  #mc-form i[class*="fa-envelope"] { top: 18px; }
   
   input#mailchimp-fname,
   input#mailchimp-lname,
