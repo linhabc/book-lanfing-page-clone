@@ -644,6 +644,14 @@
   /* ==========================================================================
      Contact
      ========================================================================== */
+  
+  .col-md-8.col-sm-11.center-block {
+    margin: auto;
+  }
+
+  section header h3 {
+    font-weight: 300;
+  }
    
   .contact.section-spacing { padding: 4.5em 0 0; }
   

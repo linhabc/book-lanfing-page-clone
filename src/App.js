@@ -10,6 +10,8 @@ import Review from './component/Review';
 import SubForm from './component/SubForm';
 import Price from './component/Price';
 import Author from './component/Author';
+import Buy from './component/Buy';
+import Contact from './component/Contact';
 import Footer from './component/Footer';
 
 class App extends Component {
@@ -25,6 +27,8 @@ class App extends Component {
         <SubForm />
         <Price />
         <Author />
+        <Buy />
+        <Contact />
         <Footer />
       </div>
     );
