@@ -9,6 +9,8 @@ import VideoReview from './component/VideoReview';
 import Review from './component/Review';
 import SubForm from './component/SubForm';
 import Price from './component/Price';
+import Author from './component/Author';
+import Footer from './component/Footer';
 
 class App extends Component {
   render() {
@@ -22,6 +24,8 @@ class App extends Component {
         <Review />
         <SubForm />
         <Price />
+        <Author />
+        <Footer />
       </div>
     );
   }

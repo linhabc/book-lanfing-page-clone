@@ -51,7 +51,7 @@ class Counter extends Component {
                     <div className="row">
                         <CounterItem classTitle='fa fa-file-alt fa-3x' total={this.state.totalPage} title='Total Pages'/>
                         <CounterItem classTitle='fa fa-graduation-cap fa-3x' total={this.state.activeReader} title='Active Readers'/>
-                        <CounterItem classTitle='fab fa-facebook-f fa-3x' total={this.state.facebookFan} title='Facebook Fans'/>
+                        <CounterItem classTitle='fab fa-facebook-square fa-3x' total={this.state.facebookFan} title='Facebook Fans'/>
                         <CounterItem classTitle='fa fa-users fa-3x' total={this.state.subcriber} title='Subscribers'/>
                     </div>
                 </div>

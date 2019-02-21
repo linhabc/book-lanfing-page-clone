@@ -780,7 +780,7 @@
     transition: background .5s linear;
   }
   
-  .scroll-top a:hover { background: #3498db; }
+  .scroll-top a:hover { background: #3498db; color: #ddd;}
   
   /* ==========================================================================
      Small devices (tablets, 768px and up)
