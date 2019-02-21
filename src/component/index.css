@@ -177,7 +177,7 @@
   /* buy button end*/
 
   .navbar {
-    height: 88px;
+    height: auto;
   }
 
   .navbar.navbar-expand-lg.stick {

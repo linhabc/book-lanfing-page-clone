@@ -26,12 +26,12 @@ class NavBar extends Component {
     handleScrol(event){
         if(window.scrollY > 1050){
             this.setState({
-                classTitle: 'navbar navbar-expand-lg stick'
+                classTitle: 'navbar navbar-expand-lg navbar-light stick'
             });
         }
         else{
             this.setState({
-                classTitle: 'navbar navbar-expand-lg'
+                classTitle: 'navbar navbar-expand-lg navbar-light'
             });
         }
     }
@@ -40,19 +40,16 @@ class NavBar extends Component {
         return (
             <nav className={this.state.classTitle}>
                 <div className="container">
-                    <div className="navbar-header">
-                        <a class="navbar-brand" href="#Home">
-                            <img src={logo_nav} data-at2x={logo} alt="site name"/>
-                        </a>
-        
-                        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar-collapse-1" 
-                                aria-controls="bs-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
-                            <span className="sr-only">Toggle navigation</span> 
-                                <span className="icon-bar"></span> 
-                                <span className="icon-bar"></span> 
-                                <span className="icon-bar"></span> 
-                        </button>
-                    </div>
+                    
+                    <a className="navbar-brand" href="#Home">
+                        <img src={logo_nav} data-at2x={logo} alt="site name"/>
+                    </a>
+    
+                    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#bs-navbar-collapse-1" 
+                            aria-controls="bs-navbar-collapse-1" aria-expanded="false" aria-label="Toggle navigation">
+                            <span className="navbar-toggler-icon"></span>
+                    </button>
+                    
 
                     <div className="collapse navbar-collapse" id="bs-navbar-collapse-1">
                         <ul className="navbar-nav">
@@ -83,7 +80,7 @@ class NavBar extends Component {
                             <li className="nav-item">
                                 <AnchorLink className="nav-link" href="#Contact">Contact</AnchorLink>
                             </li>
-                            <li><AnchorLink className="button" href="#Buy">Buy Now</AnchorLink></li>
+                            <li><AnchorLink className="button" href="#Pricing">Buy Now</AnchorLink></li>
                         </ul>
                     </div>
                 </div>
